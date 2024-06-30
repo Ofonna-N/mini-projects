@@ -14,6 +14,3 @@ As a frontend engineer, I believe in continuous learning and hands-on practice. 
 ## Explore the Projects
 Feel free to dive into the individual mini-projects. Click on the links below to explore:
    <!-- Add more projects here -->
-
-## Contributions
-If you find any improvements or have ideas for new mini-projects, feel free to contribute! Let's learn together and build something awesome.
