@@ -1,0 +1,43 @@
+/* #hero-block {
+
+} */
+
+#hero-block__container {
+  padding: 50px;
+  max-width: 900px;
+  /* background-color: wheat; */
+  margin-inline: auto;
+  text-align: center;
+}
+
+#hero-block__title {
+  font-size: 3rem;
+}
+
+#hero-block__description {
+  font-size: 1rem;
+}
+
+@media screen and (width >= 600px) {
+  #hero-block__description {
+    font-size: 1.35rem;
+  }
+}
+
+/* #projects-block {
+
+} */
+
+/* #projects-block__container {
+ 
+} */
+
+#projects-block__title {
+  text-align: center;
+  font-size: 1.75rem;
+  /* CSS properties for #projects-block__title */
+}
+
+/* #projects-block__grid {
+
+} */
