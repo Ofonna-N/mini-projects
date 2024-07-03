@@ -57,7 +57,6 @@ const getProjectCard = (project: Project) => {
 
                       <i
                         class="fa-brands fa-github"
-                        style="color: #ffffff"
                         onclick='window.open("${project.codeLink}", "_blank")'
                       ></i>
                     </div>

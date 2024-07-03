@@ -13,6 +13,7 @@ xl, extra-large: 1536px
 
 :root {
   --font-color: #f0f0f0;
+  --accent-color: #ff6f61;
 }
 
 html {
