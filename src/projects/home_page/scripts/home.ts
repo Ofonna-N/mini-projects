@@ -1,5 +1,26 @@
 const heroOverViewText = document.getElementById("hero-block__description");
 
+type Project = {
+  title: string;
+  description: string;
+  techStack: string[];
+  demoLink: string;
+  codeLink?: string;
+  thumbnail?: string;
+};
+
+const projectsData: Project[] = [
+  {
+    title: "Quote Generator",
+    description:
+      "A simple quote generator that fetches random quotes from an API.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    demoLink: "quote-generator/index.html",
+    thumbnail: "quote-generator/thumbnail.png",
+    codeLink: "",
+  },
+];
+
 const updateHeroOverviewText = () => {
   const width = window.innerWidth;
 
