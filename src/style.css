@@ -1,0 +1,23 @@
+@import "./css/reset.css";
+@import "./css/roboto_font.css";
+@import "./projects/home_page/css/home.css";
+
+/* 
+BREAK POINTS
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+lg, large: 1200px
+xl, extra-large: 1536px
+*/
+
+:root {
+  --font-color: #f0f0f0;
+  --accent-color: #ff6f61;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #151515;
+  color: var(--font-color);
+}

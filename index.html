@@ -2,13 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Mini Projects</title>
   </head>
   <body>
     <div id="app">
-      <h1>Initial commit</h1>
+      <main>
+        <div id="hero-block">
+          <div id="hero-block__container">
+            <h1 id="hero-block__title">Mini Projects</h1>
+            <p id="hero-block__description">
+              As a frontend engineer, I believe in continuous learning and
+              hands-on practice. This repository serves as my daily playground—a
+              space where I explore HTML, CSS, and JavaScript through bite-sized
+              projects. Each mini-project represents a focused exercise,
+              allowing me to sharpen my skills, experiment with new techniques,
+              and express creativity.
+            </p>
+          </div>
+        </div>
+        <div id="projects-block">
+          <div id="projects-block__container">
+            <h2 id="projects-block__title">Projects</h2>
+            <div id="projects-block__grid">
+              <div class="project-card">
+                <a href="/projects/01-rotating-navigation">
+                  <img
+                    src="/src/assets/sample.jpg"
+                    alt="Rotating Navigation"
+                    class="project-card__image"
+                  />
+                  <div class="project-card__content">
+                    <div class="project-card__title-container">
+                      <h3 class="project-card__title">Quote Generator</h3>
+
+                      <i
+                        class="fa-brands fa-github"
+                        style="color: #ffffff"
+                        onclick="window.open(`https://developer.mozilla.org/en-US/docs/Web/API/Location`, '_blank')"
+                      ></i>
+                    </div>
+                    <p class="project-card__desc">
+                      A simple quote generator that fetches random quotes from
+                      an API. Test
+                    </p>
+                    <div class="project-card__tech-stack">
+                      <span class="project-card__tag">HTML</span>
+                      <span class="project-card__tag">CSS</span>
+                      <span class="project-card__tag">JavaScript</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="project-card__links roboto-bold">
+                  <a href="#"> view code </a>
+                  <a href="#"> view demo </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

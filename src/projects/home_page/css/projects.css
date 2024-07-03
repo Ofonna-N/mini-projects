@@ -1,0 +1,119 @@
+/* #projects-block {
+
+} */
+
+/* #projects-block__container {
+ 
+} */
+
+#projects-block__title {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+#projects-block__grid {
+  margin-inline: 16px;
+  /* background-color: antiquewhite; */
+  display: grid;
+  justify-items: center;
+  padding-block: 50px;
+}
+
+@media screen and (width > 600px) {
+  #projects-block__grid {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 20px;
+  }
+}
+
+.project-card {
+  position: relative;
+  border-radius: 10px;
+  max-width: 300px;
+  overflow: hidden;
+  color: var(--font-color);
+  box-shadow: 5px 1px 5px 1px rgba(0, 0, 0, 0.35);
+  transition: all 0.15s;
+  &:hover {
+    transform: scale(1.025);
+  }
+  & a {
+    text-decoration: none;
+  }
+  &:hover .project-card__title {
+    text-decoration: underline;
+  }
+}
+.project-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > .fa-github {
+    font-size: 1.25rem;
+    transition: all 0.15s;
+    &:hover {
+      font-size: 1.45rem;
+      color: var(--accent-color);
+    }
+  }
+}
+
+.project-card__title {
+  font-size: 1.55rem;
+  font-weight: 500;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-card__image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  top: 0;
+  /* border-top-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
+}
+
+.project-card__content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 10px;
+}
+
+/* .project-card__desc {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.project-card__tag {
+  background-color: rgb(122, 17, 17);
+  padding-inline: 5px;
+  padding-block: 2px;
+  border-radius: 5px;
+}
+
+.project-card__links {
+  width: 100%;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+  display: flex;
+  justify-content: start;
+  color: brown;
+
+  & > a:hover {
+    color: rgb(230, 49, 49);
+    text-decoration: underline;
+  }
+}
+
+.project-card__tech-stack {
+  margin-bottom: 20px;
+}
