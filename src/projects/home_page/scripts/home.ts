@@ -54,7 +54,6 @@ const getProjectCard = (project: Project) => {
                   <div class="project-card__content">
                              <div class="project-card__title-container">
                       <h3 class="project-card__title">${project.title}</h3>
-
                       <i
                         class="fa-brands fa-github"
                         onclick='window.open("${project.codeLink}", "_blank")'

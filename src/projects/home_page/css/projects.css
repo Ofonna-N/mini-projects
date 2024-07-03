@@ -40,6 +40,9 @@
   & a {
     text-decoration: none;
   }
+  &:hover .project-card__title {
+    text-decoration: underline;
+  }
 }
 .project-card__title-container {
   display: flex;
