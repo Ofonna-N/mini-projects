@@ -9,8 +9,6 @@
 #projects-block__title {
   text-align: center;
   font-size: 1.75rem;
-  margin-bottom: 30px;
-  /* CSS properties for #projects-block__title */
 }
 
 #projects-block__grid {
@@ -18,11 +16,12 @@
   /* background-color: antiquewhite; */
   display: grid;
   justify-items: center;
+  padding-block: 50px;
 }
 
 @media screen and (width > 600px) {
   #projects-block__grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     gap: 20px;
   }
 }
@@ -40,6 +39,15 @@
   }
   & a {
     text-decoration: none;
+  }
+}
+.project-card__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > .fa-github {
+    font-size: 1.25rem;
   }
 }
 
@@ -77,7 +85,7 @@
 } */
 
 .project-card__tag {
-  background-color: darkred;
+  background-color: rgb(122, 17, 17);
   padding-inline: 5px;
   padding-block: 2px;
   border-radius: 5px;
@@ -96,4 +104,8 @@
     color: rgb(230, 49, 49);
     text-decoration: underline;
   }
+}
+
+.project-card__tech-stack {
+  margin-bottom: 20px;
 }
