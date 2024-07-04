@@ -1,3 +1,5 @@
+import thumbnails from "./thumbnails";
+
 const heroOverViewText = document.getElementById("hero-block__description");
 const projectsContainer = document.getElementById("projects-block__grid");
 
@@ -17,7 +19,7 @@ const projectsData: Project[] = [
     description:
       "A simple quote generator that fetches random quotes from an API.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    thumbnail: "/src/assets/quote_generator_thumbnail.jpeg",
+    thumbnail: thumbnails.quoteGenerator,
     thumbnailAlt: "Quote Generator",
     codeLink:
       "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/quote_generator",
