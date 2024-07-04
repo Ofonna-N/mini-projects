@@ -40,16 +40,27 @@ main {
   padding: 20px;
   border-radius: 10px;
   background-color: #f0f0f0;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 
   & .fa-quote-left {
     font-size: 2.5rem;
   }
 }
 
+@media screen and (width > 600px) {
+  #quote-container {
+    min-width: 400px;
+  }
+}
+
 #quote {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+}
+
+#author {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
 #quote-container__btns {
@@ -67,6 +78,11 @@ main {
 
     &:hover {
       background-color: #b29fd1;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
     }
   }
 
