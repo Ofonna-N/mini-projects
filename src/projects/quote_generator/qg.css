@@ -1,0 +1,78 @@
+@import "/src/css/reset.css";
+@import "/src/css/roboto_font.css";
+@import "./qg.css";
+
+/* 
+BREAK POINTS
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+lg, large: 1200px
+xl, extra-large: 1536px
+*/
+
+:root {
+  --font-color: #f0f0f0;
+  --accent-color: #9c92ac;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' fill='%239C92AC' fill-opacity='0.39' fill-rule='evenodd'/%3E%3C/svg%3E");
+  padding-inline: 16px;
+}
+
+#app-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#quote-container {
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+  & .fa-quote-left {
+    font-size: 2.5rem;
+  }
+}
+
+#quote {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#quote-container__btns {
+  display: flex;
+  justify-content: space-between;
+
+  & button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+
+    &:hover {
+      background-color: #b29fd1;
+    }
+  }
+
+  & > #tweet-quote {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

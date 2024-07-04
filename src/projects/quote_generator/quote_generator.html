@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/projects/quote_generator/qg.css" />
     <title>Quote Generator</title>
   </head>
   <body>
-    <h1>Quote Generator</h1>
+    <main>
+      <div>
+        <h1 id="app-title">Quote Generator</h1>
+        <div id="quote-container">
+          <i class="fa-solid fa-quote-left"></i>
+          <p id="quote">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae
+            saepe ipsam doloribus laborum necessitatibus expedita velit.
+            Nostrum, ratione qui! Eligendi atque quasi asperiores voluptatum
+            nemo, voluptate aperiam accusantium. Ea?
+          </p>
+          <div id="quote-container__btns">
+            <button id="new-quote">New Quote</button>
+            <button id="tweet-quote">
+              <i class="fa-brands fa-twitter"></i>Tweet
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
