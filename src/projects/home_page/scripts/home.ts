@@ -5,6 +5,7 @@ type Project = {
   title: string;
   description: string;
   techStack: string[];
+  demoLink?: string;
   codeLink?: string;
   thumbnail?: string;
   thumbnailAlt?: string;
@@ -16,9 +17,10 @@ const projectsData: Project[] = [
     description:
       "A simple quote generator that fetches random quotes from an API.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    thumbnail: "/src/assets/sample.jpg",
+    thumbnail: "/src/assets/quote_generator_thumbnail.jpeg",
     thumbnailAlt: "Quote Generator",
     codeLink: "https://developer.mozilla.org/en-US/docs/Web/API/Location",
+    demoLink: "/src/projects/quote_generator/quote_generator.html",
   },
 ];
 
@@ -45,7 +47,7 @@ const updateHeroOverviewText = () => {
 
 const getProjectCard = (project: Project) => {
   return `<div class="project-card">
-                <a href="/projects/01-rotating-navigation">
+                <a href='${project.demoLink}'>
                   <img
                     src=${project.thumbnail}
                     alt=${project.thumbnailAlt}
