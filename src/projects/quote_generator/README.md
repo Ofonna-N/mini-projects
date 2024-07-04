@@ -12,7 +12,7 @@ This is a simple web application that generates random quotes and allows users t
 
 To run the Quote Generator locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/quote-generator.git`
+1. Clone the repository: `git clone https://github.com/Ofonna-N/mini-projects.git`
 2. Open the `quote_generator.html` file in your web browser.
 
 ## Dependencies
