@@ -19,7 +19,8 @@ const projectsData: Project[] = [
     techStack: ["HTML", "CSS", "JavaScript"],
     thumbnail: "/src/assets/quote_generator_thumbnail.jpeg",
     thumbnailAlt: "Quote Generator",
-    codeLink: "https://developer.mozilla.org/en-US/docs/Web/API/Location",
+    codeLink:
+      "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/quote_generator",
     demoLink: "/src/projects/quote_generator/quote_generator.html",
   },
 ];
