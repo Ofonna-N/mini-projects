@@ -1,4 +1,4 @@
-import { resolve } from "path";
+// vite.config.js
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -6,11 +6,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve("./", "index.html"),
-        nested: resolve(
-          "src/projects/quote_generator/",
-          "quote_generator.html"
-        ),
+        main: new URL("index.html", import.meta.url).pathname,
+        quote_generator: new URL(
+          "src/projects/quote_generator/index.html",
+          import.meta.url
+        ).pathname,
       },
     },
   },

@@ -23,7 +23,7 @@ const projectsData: Project[] = [
     thumbnailAlt: "Quote Generator",
     codeLink:
       "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/quote_generator",
-    demoLink: "/src/projects/quote_generator/quote_generator.html",
+    demoLink: "/mini-projects/src/projects/quote_generator/index.html",
   },
 ];
 
