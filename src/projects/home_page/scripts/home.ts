@@ -1,3 +1,4 @@
+import ROUTES from "../../../constants/routes";
 import thumbnails from "./thumbnails";
 
 const heroOverViewText = document.getElementById("hero-block__description");
@@ -23,7 +24,7 @@ const projectsData: Project[] = [
     thumbnailAlt: "Quote Generator",
     codeLink:
       "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/quote_generator",
-    demoLink: "/mini-projects/src/projects/quote_generator/index.html",
+    demoLink: `${ROUTES.BASE}/src/projects/quote_generator/index.html`,
   },
 ];
 

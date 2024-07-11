@@ -1,6 +1,5 @@
 @import "./css/reset.css";
 @import "./css/roboto_font.css";
-@import "./projects/home_page/css/home.css";
 
 /* 
 BREAK POINTS
@@ -18,4 +17,30 @@ xl, extra-large: 1536px
 
 html {
   font-family: "Roboto", sans-serif;
+}
+
+.back-link {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: 700;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.35);
+  transition: all 0.15s;
+}
+
+.back-link:hover {
+  transform: scale(1.075);
+}
+
+.back-link--lightskyblue {
+  background-color: lightskyblue;
+  color: black;
 }
