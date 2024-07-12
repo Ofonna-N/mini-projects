@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
@@ -9,7 +19,32 @@
   <body>
     <main>
       <h1>Custom Video Player</h1>
-      <video controls src="./gone.mp4"></video>
+      <div class="screen-container">
+        <video src="./gone.mp4"></video>
+        <div class="controls">
+          <button class="play-btn">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button class="step-fwd-btn">
+            <i class="fa-solid fa-step-forward"></i>
+          </button>
+          <button class="volume-btn">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <input
+            type="range"
+            class="time-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+          />
+          <p class="time-stamp">
+            <span class="current-time">0:00</span> /
+            <span class="duration">0:00</span>
+          </p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
