@@ -11,6 +11,10 @@ export default defineConfig({
           "src/projects/quote_generator/index.html",
           import.meta.url
         ).pathname,
+        custom_video_player: new URL(
+          "src/projects/custom_video_player/index.html",
+          import.meta.url
+        ).pathname,
       },
     },
   },
