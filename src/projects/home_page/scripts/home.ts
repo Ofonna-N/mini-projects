@@ -26,6 +26,17 @@ const projectsData: Project[] = [
       "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/quote_generator",
     demoLink: `${ROUTES.BASE}/src/projects/quote_generator/index.html`,
   },
+  {
+    title: "Video Player",
+    description:
+      "A custom video player with basic functionalities like play, pause, and volume control.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    thumbnail: thumbnails.videoPlayer,
+    thumbnailAlt: "Video Player",
+    codeLink:
+      "https://github.com/Ofonna-N/mini-projects/tree/main/src/projects/custom_video_player",
+    demoLink: `${ROUTES.BASE}/src/projects/custom_video_player/index.html`,
+  },
 ];
 
 const updateHeroOverviewText = () => {
