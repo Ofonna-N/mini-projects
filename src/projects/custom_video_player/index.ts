@@ -3,9 +3,13 @@ const video: HTMLVideoElement = document.getElementById(
 )! as HTMLVideoElement;
 
 const playButton = document.querySelector(".play-btn")! as HTMLButtonElement;
+const stepForwardButton = document.querySelector(
+  ".step-fwd-btn"
+)! as HTMLButtonElement;
 
 video.addEventListener("click", toggleVideo);
 playButton.addEventListener("click", toggleVideo);
+stepForwardButton.addEventListener("click", stepForward);
 
 function toggleVideo() {
   if (video.paused) {
@@ -23,6 +27,10 @@ function updatePlayButton(isPaused: boolean) {
   } else {
     btnIcon.classList.replace("fa-play", "fa-pause");
   }
+}
+
+function stepForward() {
+  video.currentTime += 5;
 }
 
 const initVideoPlayer = () => {};
