@@ -11,6 +11,7 @@ video.addEventListener("click", toggleVideo);
 playButton.addEventListener("click", toggleVideo);
 stepForwardButton.addEventListener("click", stepForward);
 
+// TODO: rename function to togglePlayPause
 function toggleVideo() {
   if (video.paused) {
     video.play();
@@ -30,7 +31,11 @@ function updatePlayButton(isPaused: boolean) {
 }
 
 function stepForward() {
-  video.currentTime += 5;
+  if (video.currentTime + 5 < video.duration) {
+    video.currentTime += 5;
+  } else {
+    video.currentTime = video.duration;
+  }
 }
 
 const initVideoPlayer = () => {};

@@ -33,11 +33,28 @@ main {
     font-size: large;
   }
 
+  /* TODO: STYLE BUTTON TO REMOVE BLOCKY LOOK */
   & button {
     background-color: transparent;
+    position: relative;
+
+    &:hover .tooltip {
+      visibility: visible;
+    }
   }
 }
 
 .time-slider {
   flex: 1;
+}
+
+.tooltip {
+  position: absolute;
+  color: white;
+  top: 0;
+  background-color: gray;
+  padding: 5px;
+  right: 50%;
+  transform: translate(50%, -130%);
+  visibility: hidden;
 }
