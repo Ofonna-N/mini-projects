@@ -7,12 +7,11 @@ const stepForwardButton = document.querySelector(
   ".step-fwd-btn"
 )! as HTMLButtonElement;
 
-video.addEventListener("click", toggleVideo);
-playButton.addEventListener("click", toggleVideo);
+video.addEventListener("click", playOrPauseVideo);
+playButton.addEventListener("click", playOrPauseVideo);
 stepForwardButton.addEventListener("click", stepForward);
 
-// TODO: rename function to togglePlayPause
-function toggleVideo() {
+function playOrPauseVideo() {
   if (video.paused) {
     video.play();
   } else {
