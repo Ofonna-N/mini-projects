@@ -33,10 +33,14 @@ main {
     font-size: large;
   }
 
-  /* TODO: STYLE BUTTON TO REMOVE BLOCKY LOOK */
   & button {
     background-color: transparent;
     position: relative;
+    border: none;
+    transform: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &:hover .tooltip {
       visibility: visible;
