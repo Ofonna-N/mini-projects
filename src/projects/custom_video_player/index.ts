@@ -6,14 +6,15 @@ const stepForwardButton = document.querySelector(
   ".step-fwd-btn"
 )! as HTMLButtonElement;
 const rangeSlider = document.querySelector(".time-slider")! as HTMLInputElement;
+const currentTime = document.querySelector(".current-time")! as HTMLSpanElement;
+const duration = document.querySelector(".duration")! as HTMLSpanElement;
 
 video.addEventListener("click", playOrPauseVideo);
 playButton.addEventListener("click", playOrPauseVideo);
 stepForwardButton.addEventListener("click", stepForward);
 rangeSlider.addEventListener("input", updateVideoTime);
-video.addEventListener("timeupdate", () => {
-  rangeSlider.value = (video.currentTime / video.duration) * 100 + "";
-});
+video.addEventListener("timeupdate", updateRangeSliderAndTimeStamp);
+video.addEventListener("ended", () => updatePlayButton(true));
 function playOrPauseVideo() {
   if (video.paused) {
     video.play();
@@ -42,6 +43,20 @@ function stepForward() {
 
 function updateVideoTime() {
   video.currentTime = (video.duration * +rangeSlider.value) / 100;
+}
+
+function updateRangeSliderAndTimeStamp() {
+  rangeSlider.value = (video.currentTime / video.duration) * 100 + "";
+  currentTime.textContent = formatTime(video.currentTime);
+  duration.textContent = formatTime(video.duration);
+}
+
+function formatTime(time: number) {
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time % 60);
+  return `${minutes < 10 ? "0" + minutes : minutes}:${
+    seconds < 10 ? "0" + seconds : seconds
+  }`;
 }
 
 const initVideoPlayer = () => {
