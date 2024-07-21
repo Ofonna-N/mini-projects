@@ -8,6 +8,9 @@ const stepForwardButton = document.querySelector(
 const rangeSlider = document.querySelector(".time-slider")! as HTMLInputElement;
 const currentTime = document.querySelector(".current-time")! as HTMLSpanElement;
 const duration = document.querySelector(".duration")! as HTMLSpanElement;
+const volumeSlider = document.getElementById(
+  "volume-slider"
+)! as HTMLInputElement;
 
 video.addEventListener("click", playOrPauseVideo);
 playButton.addEventListener("click", playOrPauseVideo);
@@ -15,6 +18,7 @@ stepForwardButton.addEventListener("click", stepForward);
 rangeSlider.addEventListener("input", updateVideoTime);
 video.addEventListener("timeupdate", updateRangeSliderAndTimeStamp);
 video.addEventListener("ended", () => updatePlayButton(true));
+volumeSlider.addEventListener("input", updateVolume);
 function playOrPauseVideo() {
   if (video.paused) {
     video.play();
@@ -57,6 +61,10 @@ function formatTime(time: number) {
   return `${minutes < 10 ? "0" + minutes : minutes}:${
     seconds < 10 ? "0" + seconds : seconds
   }`;
+}
+
+function updateVolume() {
+  video.volume = +volumeSlider.value;
 }
 
 const initVideoPlayer = () => {

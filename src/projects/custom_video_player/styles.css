@@ -12,7 +12,6 @@ main {
 
 .screen-container {
   position: relative;
-  /* background-color: beige; */
 }
 
 .controls {
@@ -61,4 +60,27 @@ main {
   right: 50%;
   transform: translate(50%, -130%);
   visibility: hidden;
+}
+
+.volume-container {
+  display: flex;
+  cursor: pointer;
+  gap: 5px;
+  align-items: center;
+
+  & input[type="range"] {
+    display: none;
+    width: 50px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+  &:hover input[type="range"] {
+    display: block;
+    transform: scaleX(1);
+  }
+}
+
+.time-stamp {
+  text-wrap: nowrap;
 }

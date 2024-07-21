@@ -44,9 +44,17 @@
             <i class="fa-solid fa-forward-step"></i>
             <span class="tooltip">5<small>s</small></span>
           </button>
-          <button class="volume-btn">
+          <div class="volume-container">
             <i class="fa-solid fa-volume-high"></i>
-          </button>
+            <input
+              type="range"
+              id="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
           <input
             type="range"
             class="time-slider"
